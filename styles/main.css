@@ -1,0 +1,36 @@
+body {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+h3 {
+    text-align: center;
+}
+
+header,nav,main,footer {
+    margin: 1.25rem auto;
+    max-width: 760px;
+}
+
+header {
+    background-color: rgb(14, 110, 165);
+    border-radius: 25px;
+    color: #ffff;
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+
+header img {
+    max-width: 10%;
+    max-height: 12%;
+    float:left;
+}
+
+footer {
+    background-color: rgb(14, 110, 165);
+    border-radius: 25px;
+    color: #ffff;
+    text-align: center;
+    padding: 1.5rem;
+}
