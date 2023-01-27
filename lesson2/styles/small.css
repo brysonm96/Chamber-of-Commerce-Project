@@ -1,0 +1,72 @@
+body {
+	font-size: 16px;
+	font-family: "Sansita", Ubuntu, sans-serif;
+}
+/* phone or baseline views **************************/
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+
+
+main section {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+	margin: 0.5rem;
+	border: 1px solid rgb(8, 9, 78);
+	padding: 0 1rem;
+	background-color: rgb(190, 197, 216);
+}
+
+main section h2, main section h3 {
+	color: #ffffff;
+}
+
+
+
+/*main section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+} */
+
+.colimage {
+	box-shadow: 0 0 30px #333;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+main section p {
+    color: #000000;
+}
+
+h5 {
+    color: #253655;
+}
+
+header{
+    color:rgb(0, 0, 0);
+    padding: 0.05rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+
+footer{
+    color:rgb(3, 3, 3);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li {
+    text-align: center;
+    margin: 0.5rem;
+}
