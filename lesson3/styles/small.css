@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+}
+
+.mainHeader,
+.mainFooter {
+	background-color: #355070;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+}
+
+.mainHeader,
+nav,
+main,
+.mainFooter {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	padding: .5rem;
+	color: #020202;
+}
+
+p {
+	padding: .5rem;
+}
+
+nav {
+	background-color: #84BCDA;
+	text-align: center;
+	box-shadow: 0 0 30px #333;
+	font-family: Garamond, serif;
+	
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.active {
+	background-color: #53778a
+}
+
+nav div {
+	flex: 1 1 auto;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+nav a:hover {
+	background-color: #1A936F;
+	color: #8bdfc6;
+}
+
+main {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+}
+
+main .submenu, article, .logo {
+	margin: 1rem;
+	border: 1px solid #bbb;
+	padding: 1rem;
+	background-color: #b5dfd1;
+}
+
+.box {
+	margin: 1rem;
+	border: 1px solid rgb(5, 5, 5);
+	padding: 1rem;
+}
+
+.submenu ul {
+	margin-left: 2rem;
+}
+
+main picture {
+	display: block;
+	margin: 1rem;
+}
+
+main article {
+	margin: 1rem;
+}
+
+.mainFooter {
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+	font-weight: 700;
+}
+
+main div p, main div h2{
+    text-align: center;
+}
+
+.primary {
+	background-color: #84BCDA;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+}
+	
+.accent1 {
+	background-color: #1A936F;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+.accent2 {
+	background-color: #E4D6A7;
+	display: flex;
+	padding: 1rem;
+	justify-content: space-between;
+}
+
+.designsHeader{
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.85rem;
+	text-align:center;
+	padding: 1rem;
+	font-family: 'Monaco', monospace;
+
+}
