@@ -110,6 +110,10 @@ header nav{
     text-align:center;
 }
 
+#navItems li a:hover{
+	background-color:rgb(83, 102, 155);
+}
+
 #date{
     margin: 0.5rem;
     background-color:rgb(103, 128, 190);
@@ -122,6 +126,21 @@ header nav{
     padding:0.5rem;
     border: 0.2rem solid rgb(76, 94, 139);
     color:white;
+}
+
+.reminderBanner{
+    grid-column-start:1;
+    grid-column-end:7;
+    text-align: center;
+}
+.reminderBanner p{
+    color:white;
+    background-color:rgb(95, 53, 51);
+    margin-left:5rem;
+    margin-right:5rem;
+    padding:1rem;
+    border: 0.2rem solid rgb(121, 65, 63);
+
 }
 
 /* ----------The main---------- */
