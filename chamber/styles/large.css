@@ -1,4 +1,4 @@
-@media (min-width: 65em){
+@media (min-width: 1000px){
 
     main{
         display:grid;
@@ -42,8 +42,12 @@
         grid-row-end:5;
     }
 
+    #hero img{
+        width: 100%;
+        height: 100%;
+    }
+
     #event{
-        height:auto;
         grid-column-start:1;
         grid-column-end:2;
         grid-row-start:1;
@@ -51,7 +55,6 @@
     }
 
     #weather{
-        height:auto;
         grid-column-start:1;
         grid-column-end:2;
         grid-row-start:3;

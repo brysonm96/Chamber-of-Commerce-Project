@@ -15,7 +15,7 @@
 <body>
     <header>
         <div id="logo">
-            <img src="images/chamberofcommercelogo.png" alt="Chamber Logo">
+            <img src="images/chamberofcommercelogo.webp" alt="Chamber Logo">
             <h2>Maury Alliance</h2>
         </div>
 
@@ -47,13 +47,21 @@
 
     <main>
         <div id="hero">
-            <p>Hero with site name and call to action</p>
+            <picture class="hero-img">
+                <source media="(max-width: 600px)" srcset="images/sample-photo-small.jpg">
+                <source media="(max-width: 1000px)" srcset="images/sample-photo-medium.jpg">
+                <img src="images/sample-photo-large.jpg" alt="sample photo">
+            </picture>
         </div>
         <div id="event">
             <p>Event</p>
         </div>
         <div id="weather">
-            <p>Weather</p>
+            <h3>Weather<span id="weatherIcon"> ☁️ </span></h3>
+            <h4 class="weatherInfo">
+                <span id="thermIcon">🌡️</span><span id="temperature">44</span> ºF
+            </h4>
+            <p><span id="windIcon">💨</span> Wind Speed: <span id="speed">4.0</span> | <span id="chillIcon">❄️</span> Wind Chill: <span id="windChill">N/A</span></p>
         </div>
         <div id="news">
             <p>News Release</p>
@@ -70,7 +78,7 @@
 
     <footer>
         <div class="footerImage">
-            <img src="images/chamberofcommercelogo.png" alt="Maury Chamber img">
+            <img src="images/chamberofcommercelogo.webp" alt="Maury Chamber img">
         </div>
         <div id="location">
             <h2>Maury County Chamber & Economic Alliance</h2>
@@ -95,5 +103,7 @@
     </footer>
     <script src="scripts/button.js"></script>
     <script src="scripts/date.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
 </body>
 </html>

@@ -1,4 +1,4 @@
-@media (min-width: 32em) {
+@media (min-width: 600px) {
 
     #socialItems{
         justify-content:right;
@@ -7,15 +7,20 @@
     main{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: auto auto auto auto auto;
+        
+        
     }
 
     #hero{
-        
-        grid-column-start:1;
-        grid-column-end:4;
-        grid-row-start:1;
-        grid-row-end:2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    #hero img{
+        width: 100%;
+        height: 100%;
     }
 
     #news{
@@ -23,6 +28,7 @@
         grid-column-end:4;
         grid-row-start:2;
         grid-row-end:3;
+        height:120px;
     }
 
     #spotlight{
@@ -63,6 +69,8 @@
         grid-column-end:3;
         grid-row-start:5;
         grid-row-end:6;
+        
+        
     }
 
     #weather{
@@ -70,5 +78,7 @@
         grid-column-end:4;
         grid-row-start:5;
         grid-row-end:6;
+        
+        
     }
 }
