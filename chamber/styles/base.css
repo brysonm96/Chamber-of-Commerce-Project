@@ -290,15 +290,6 @@ main{
 	font-weight: bolder;
 	font-size: larger;
 }
-
-.visitBox {
-    border-top: 2px solid rgb(65, 80, 119);
-    padding-top:2em;
-    padding-left:7em;
-    padding-right:7em;
-    
-}
-
 /* ----------The footer---------- */
 
 footer{
