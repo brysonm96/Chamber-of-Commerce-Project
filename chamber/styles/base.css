@@ -248,6 +248,57 @@ main{
     display:none;
 }
 
+/* ----------Discover page---------- */
+
+#mainDiscover {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: rgb(241, 244, 253);
+}
+
+#mainDiscover h2{
+    color:black;
+    margin:2em;
+    border-bottom: 2px solid rgb(65, 80, 119);
+    padding-bottom:2em;
+    padding-left:7em;
+    padding-right:7em;
+}
+
+.textBox {
+    inline-size: 400px;
+    overflow-wrap: break-word;
+    margin-top:1em;
+    margin-bottom:4em;
+    font-weight:600;
+}
+
+#mainDiscover img{
+    border-radius: 0.5em;
+    border: 2px solid rgb(65, 80, 119);
+    width:300px;
+    height:400px;
+}
+
+#mainDiscover img:hover{
+    box-shadow: 0 0 50px rgb(65, 80, 119);
+}
+
+#visits {
+	color: rgb(66, 48, 129);
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.visitBox {
+    border-top: 2px solid rgb(65, 80, 119);
+    padding-top:2em;
+    padding-left:7em;
+    padding-right:7em;
+    
+}
+
 /* ----------The footer---------- */
 
 footer{

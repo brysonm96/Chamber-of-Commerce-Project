@@ -1,6 +1,6 @@
 @media (min-width: 1000px){
 
-    main{
+    #mainHome{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 125px 125px 125px 125px 125px 125px;
