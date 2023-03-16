@@ -89,11 +89,13 @@
     .spotlight:nth-child(1){
         width:auto;
         height:30%;
+        margin-bottom:1em;
     }
     
     .spotlight:nth-child(2){
         width:auto;
         height:30%;
+        margin-bottom:1em;
     }
     
     .spotlight:nth-child(3){
@@ -104,6 +106,11 @@
         width:auto;
         height:30%;
         
+    }
+
+    .spotlight:nth-child(3) h3{
+        color:black;
+
     }
 
     footer{

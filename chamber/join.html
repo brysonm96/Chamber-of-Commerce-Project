@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Chamber</title>
+    <meta name="description" content="A web page created by Bryson Mouser.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+</head>
+
+<body id="joinBody">
+    <header>
+        <div id="logo">
+            <img src="images/chamber-of-commerce-logo.webp" alt="Chamber Logo">
+            <h2>Maury Alliance</h2>
+        </div>
+
+        <ul id="socialItems">
+            <li><a href="http://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook"></a></li>
+            <li><a href="http://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="linkedin"></a></li>
+        </ul>
+    
+        <button id="menuButton"><span id="hamburger">≡</span><span id="close">X</span></button>
+
+        <nav>
+
+            <ul id="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="date">
+            <span>date</span>
+        </div>
+        <div class="reminderBanner">
+            <p>🤝🏼 Don't Forget to Come join us for the chamber meet and greet Wednesday at 7:00 p.m. 🤝🏼</p>
+        </div>
+
+    </header>
+
+    <div id="titleTag">
+    <h1>👋 Join Form 📝</h1>
+    </div>
+
+    <main id="mainJoin">
+
+        <section id="formBox">
+        <form method="get" action="thankyou.html">
+            <label for="first-name">First Name ❗</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <hr>
+            <label for="last-name">Last Name ❗</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <hr>
+            <label for="email">Email ❗</label>
+            <input type="email" id="email" name="email" required placeholder="e.g. example@domain.com">
+            <hr>
+            <label for="cell-phone">Cell Phone ❗</label>
+            <input type="tel" id="cell-phone" name="cell-phone" required>
+            <hr>
+            <label for="business-name">Business Name ❗</label>
+            <input type="text" id="business-name" name="business-name" required>
+            <hr>
+            <label for="position-title">Business Position </label>
+            <input type="text" id="position-title" name="position-title" pattern="[A-Za-z -]{7,}">
+            <hr>
+            <label for="membership-level">Membership Level</label>
+            <select id="membership-level" name="membership-level">
+              <option value="NP Membership">Non Profit</option>
+              <option value="Bronze Membership">Bronze - $20</option>
+              <option value="Silver Membership">Silver - $35</option>
+              <option value="Gold Membership">Gold - $50</option>
+            </select>
+            <hr>
+            <label for="business-description">Business Description</label>
+            <textarea id="business-description" name="business-description"></textarea>
+            <label for="hidden-time"></label>
+            <input type="hidden" id="loadtime" name="loadtime" value="">
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+
+        <div class="benefits">
+            <h3>Membership Level Benefits</h3>
+            <h4>NP Membership:</h4>
+            Non profit organization membership has no fee
+            <hr>
+            <h4>Bronze Membership:</h4>
+            <hr>
+            Access to training videos ✔️  
+            <hr>
+            Event Discounts ❌ 
+            <hr>
+            Spotlight Advertisement ❌
+            <hr>
+            <h4>Silver Membership:</h4>
+            Access to training videos ✔️
+            <hr>
+            Event Discounts ✔️
+            <hr>
+            Spotlight Advertisement ❌
+            <hr>
+            <h4>Gold Membership:</h4>
+            Access to training videos ✔️
+            <hr>
+            Event Discounts ✔️
+            <hr>
+            Spotlight Advertisement ✔️
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footerImage">
+            <img src="images/chamber-of-commerce-logo.webp" alt="Maury Chamber img">
+        </div>
+        <div id="location">
+            <h2>Maury County Chamber & Economic Alliance</h2>
+            <p>106 W 6th St</p>
+            <p>Columbia, TN 38401</p>
+            <div id="pin1">
+                <li><a href="https://goo.gl/maps/ddUzsMViWkQmWTzB7"><img src="images/pin.png" alt="location map">Location Map</a></li>
+                </div>  
+        </div>
+        <div id="contact">
+            <p>info@mauryalliance.org</p>
+            <p>(931-388-2155)</p>
+            <div id="pin2">
+                <li><a href="https://goo.gl/maps/ddUzsMViWkQmWTzB7"><img src="images/pin.png" alt="location map">Location Map</a></li>
+                </div> 
+        </div>
+        <div id="author">
+            <p>©<span id="copyrightyear"></span> Maury Alliance</p>
+            <h3>Bryson Mouser</h3> 
+            <p>WDD 230 Project</p>
+            <div id="lastDate">Last Modification: <span id="lastModified"></span></div>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/hiddentime.js"></script>
+    
+</body>
+</html>

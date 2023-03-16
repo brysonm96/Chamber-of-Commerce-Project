@@ -92,7 +92,8 @@ header nav{
 }
 
 #socialItems img{
-    width: 2rem;
+    width: 32px;
+    height:auto;
 }
 
 #navItems.open{
@@ -171,15 +172,43 @@ main{
     
 }
 
+#event h3{
+    color: rgb(0, 0, 0);
+    text-align:center;
+    border-bottom: solid rgb(0, 0, 0);
+}
+
+#event p {
+    font-weight:600;
+    text-align:center;
+    margin-top:2em;
+}
+
+#event hr{
+    border:none;
+}
+
 #weather{
     background-color: rgb(247, 248, 226);
     border: 0.1rem solid black;
     margin: 0.5rem;
+    background-image:url("https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
 }
 
 #weather h3{
-    color: black;
+    color: rgb(255, 255, 255);
     text-align:center;
+}
+
+#weather h4{
+    color: rgb(255, 255, 255);
+    text-align:center;
+    font-weight:600;
+}
+
+#weather p{
+    color: rgb(255, 255, 255);
+    font-weight:600;
 }
 
 #weather img{
@@ -221,6 +250,37 @@ main{
     
 }
 
+#news h3{
+    color:black;
+    text-align:center;
+}
+
+#news p{
+    text-align:center;
+    font-weight:600;
+}
+
+#news li{
+    text-align:center;
+    background-color:rgb(65, 80, 119);
+    padding-top:1em;
+    padding-bottom:1em;
+    width:200px;
+    height:auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    border-radius: 1em;
+    list-style-type: none;
+}
+
+#news a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
 #spotlight{
     background-color: rgb(226, 231, 248);
     border: 0.1rem solid black;
@@ -232,12 +292,32 @@ main{
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
+    background-image:url("https://media.istockphoto.com/id/880710798/vector/seamless-vector-bakery-pastry-pattern.jpg?s=612x612&w=0&k=20&c=e5TN-lIQoRhqrdIoJhUs_VfhzcmDxEY869s6s1SRYF8=");
+}
+
+.spotlight:nth-child(1) h3{
+    color:black;
+    text-align:center;
+    background-color:rgb(226, 231, 248);
+    border:solid 1px rgb(158, 162, 173);
+    padding-top:0.5em;
+    padding-bottom:0.5em;
 }
 
 .spotlight:nth-child(2){
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
+    background-image:url("https://media.istockphoto.com/id/1199384244/vector/stationery-background-school-tools-seamless-pattern-art-education-wallpaper-with-line-icons.jpg?s=612x612&w=0&k=20&c=IL_HBlKt1LqvqBpdaLxH5ToTTSLNBwBFBbhHahfmKSI=");
+}
+
+.spotlight:nth-child(2) h3{
+    color:black;
+    text-align:center;
+    background-color:rgb(226, 231, 248);
+    border:solid 1px rgb(158, 162, 173);
+    padding-top:0.5em;
+    padding-bottom:0.5em;
 }
 
 .spotlight:nth-child(3){
@@ -290,6 +370,89 @@ main{
 	font-weight: bolder;
 	font-size: larger;
 }
+
+/* ----------Join Page---------- */
+
+#joinBody{
+    background-image:url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=1380&t=st=1678916179~exp=1678916779~hmac=f9085767d0b0853efcf6f1db832fe939ff7ad924a1023124f10441e529c97846");
+}
+
+#titleTag h1{
+    color:black;
+    text-align:center;
+    margin-bottom: -4em;
+    margin-top:2em;
+}
+
+#mainJoin{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:8em;
+    margin-bottom:8em;
+    height:700px;
+}
+
+form{
+    display:grid;
+    width:250px;
+    height:auto;
+}
+
+#formBox {
+    border: 2px solid rgb(206, 213, 233);
+    background-color: rgb(241, 244, 253);
+    margin-right:2em;
+    margin-top:5em;
+    padding:1em;
+    width:auto;
+    height:520px
+}
+
+.benefits {
+    margin-top:5em;
+}
+
+#mainJoin h3{
+    color:black;
+}
+
+.benefits{
+    inline-size: 250px;
+    overflow-wrap: break-word;
+}
+
+.benefits hr{
+    border:none;
+}
+
+/* ----------Thankyou Page---------- */
+
+#thankyouBody{
+    background-image:url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=1380&t=st=1678916179~exp=1678916779~hmac=f9085767d0b0853efcf6f1db832fe939ff7ad924a1023124f10441e529c97846");
+}
+
+#mainThankyou{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    height: 800px;
+}
+
+#mainThankyou p{
+    font-weight:500;
+    font-size:30px;
+    margin-top:3em;
+
+}
+
+#mainThankyou img{
+    width:400px;
+    height:auto;
+    align-self: center;
+    margin-top: 3em;
+}
+
 /* ----------The footer---------- */
 
 footer{
@@ -297,6 +460,7 @@ footer{
     flex-direction: column;
     background-color:rgb(65, 80, 119);
     text-align: center;
+    height:auto;
 }
 
 footer p{
