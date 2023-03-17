@@ -125,7 +125,7 @@ header nav{
     text-align: center;
     align-self:center;
     padding:0.5rem;
-    border: 0.2rem solid rgb(76, 94, 139);
+    border: 3px solid rgb(76, 94, 139);
     color:white;
 }
 
@@ -146,7 +146,7 @@ header nav{
 
 /* ----------The main---------- */
 
-main{
+#mainHome{
     display: flex;
     flex-direction: column;
 }
@@ -189,25 +189,24 @@ main{
 }
 
 #weather{
-    background-color: rgb(247, 248, 226);
     border: 0.1rem solid black;
     margin: 0.5rem;
-    background-image:url("https://images.unsplash.com/photo-1597200381847-30ec200eeb9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
+    background-image: linear-gradient(rgb(85, 164, 238), rgb(255, 255, 255));
 }
 
 #weather h3{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align:center;
 }
 
 #weather h4{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align:center;
     font-weight:600;
 }
 
 #weather p{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-weight:600;
 }
 
@@ -292,7 +291,7 @@ main{
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
-    background-image:url("https://media.istockphoto.com/id/880710798/vector/seamless-vector-bakery-pastry-pattern.jpg?s=612x612&w=0&k=20&c=e5TN-lIQoRhqrdIoJhUs_VfhzcmDxEY869s6s1SRYF8=");
+    background-image: linear-gradient(rgb(228, 188, 102), rgb(255, 255, 255));
 }
 
 .spotlight:nth-child(1) h3{
@@ -304,11 +303,16 @@ main{
     padding-bottom:0.5em;
 }
 
+.spotlight:nth-child(1) p{
+    font-weight:600;
+    text-align:center;
+}
+
 .spotlight:nth-child(2){
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
-    background-image:url("https://media.istockphoto.com/id/1199384244/vector/stationery-background-school-tools-seamless-pattern-art-education-wallpaper-with-line-icons.jpg?s=612x612&w=0&k=20&c=IL_HBlKt1LqvqBpdaLxH5ToTTSLNBwBFBbhHahfmKSI=");
+    background-image: linear-gradient(rgb(102, 228, 175), rgb(255, 255, 255));
 }
 
 .spotlight:nth-child(2) h3{
@@ -320,12 +324,48 @@ main{
     padding-bottom:0.5em;
 }
 
+.spotlight:nth-child(2) p{
+    font-weight:600;
+    text-align:center;
+}
+
 .spotlight:nth-child(3){
     display: none;
 }
 
 #join {
     display:none;
+}
+
+/* ----------Directory Page---------- */
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+}
+
+section {
+	margin-top: 1rem;
+    border: solid 2px rgb(154, 172, 219);
+	color: black;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-items: center;
+    background-color:rgb(226, 231, 248);
+    padding-bottom:1rem;
+}
+
+section h2{
+    color:black;
+}
+
+section img {
+	width: 100px;
+	height: 100px;
+	margin-top: 1rem;
 }
 
 /* ----------Discover page---------- */

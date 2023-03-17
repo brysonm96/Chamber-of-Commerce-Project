@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 
-<body id="thankyouBody">
+<body>
     <header>
         <div id="logo">
             <img src="images/chamber-of-commerce-logo.webp" alt="Chamber Logo">
@@ -31,7 +31,7 @@
             <ul id="navItems">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="directorty.html">Directory</a></li>
+                <li class="active"><a href="directorty.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -45,11 +45,10 @@
 
     </header>
 
-    <main id="mainThankyou">
-
-        <img src="https://img.freepik.com/free-vector/thank-you-lettering_1262-6963.jpg" alt="thank you">
+    <main id="mainDirectory">
         
-        <p>Congratulations, we're glad you joined! Be sure to check your email for confirmation.</p>
+        <div class="cards"></div>
+
     </main>
 
     <footer>
@@ -79,6 +78,8 @@
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/button.js"></script>
+    <script src="scripts/views.js"></script>
+    <script src="scripts/getdata.js"></script>
     
 </body>
 </html>
