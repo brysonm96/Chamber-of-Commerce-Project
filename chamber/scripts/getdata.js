@@ -22,34 +22,34 @@ const displayBusinesses = (businesses) => {
     stats.classList.add("stats");
     let date = document.createElement("p");
     let membership = document.createElement("p");
-    let place = document.createElement("p");
-    let num = document.createElement("p");
-    let portrait = document.createElement("img");
+    let number = document.createElement("p");
+    let website = document.createElement("p");
+    let logo = document.createElement("img");
 
     h2.textContent = `${business.name}`;
     date.innerHTML = `<span class="label">Address: </span> ${business.address}`;
-    place.innerHTML = `<span class="label">Phone #: </span> ${business.phone}`;
-    num.innerHTML = `<span class="label"></span> ${business.link}`;
+    number.innerHTML = `<span class="label">Phone #: </span> ${business.phone}`;
+    website.innerHTML = `<span class="label"></span> ${business.link}`;
     membership.innerHTML = `<span class="label">Membership Level: </span> ${business.membership}`;
     
 
-    portrait.setAttribute("src", business.imageurl);
-    portrait.setAttribute(
+    logo.setAttribute("src", business.imageurl);
+    logo.setAttribute(
       "alt",
       `${business.name} - ${business.order} Business`
     );
-    portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "340");
-    portrait.setAttribute("height", "440");
+    logo.setAttribute("loading", "lazy");
+    logo.setAttribute("width", "200");
+    logo.setAttribute("height", "200");
     stats.appendChild(date);
-    stats.appendChild(place);
-    stats.appendChild(num);
+    stats.appendChild(number);
+    stats.appendChild(website);
     stats.appendChild(membership);
     
 
     card.appendChild(h2);
     card.appendChild(stats);
-    card.appendChild(portrait);
+    card.appendChild(logo);
 
     cards.appendChild(card);
   });
