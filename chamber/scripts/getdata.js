@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/brysonm96/WDD230/ad21904aa642ce0258687c14535536acb71e628f/chamber/data.json";
+const url = "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/data.json";
 
 const getBusinesses = async () => {
   let businesses = await jsonFetch(url);

@@ -1,12 +1,12 @@
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const gridbutton = document.querySelector("#gridButton");
+const listbutton = document.querySelector("#listButton");
+const display = document.querySelector(".cards");
 
 // The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("grid");
+	display.classList.add("cards");
 	display.classList.remove("list");
 });
 
@@ -14,5 +14,5 @@ listbutton.addEventListener("click", showList); // example using defined functio
 
 function showList() {
 	display.classList.add("list");
-	display.classList.remove("grid");
+	display.classList.remove("cards");
 }

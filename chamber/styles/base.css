@@ -339,6 +339,22 @@ header nav{
 
 /* ----------Directory Page---------- */
 
+.changeDisplay{
+    padding:1rem;
+    text-align:center;
+    background-image: linear-gradient(rgb(65, 80, 119), rgb(255, 255, 255));
+}
+
+.changeDisplay button{
+    border:none;
+    padding:1rem;
+    border-radius:1em;
+}
+
+.changeDisplay button:hover{
+    background-color:rgb(176, 193, 238);
+}
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -372,6 +388,32 @@ section img {
 	width: 100px;
 	height: 100px;
 	margin-top: 1rem;
+}
+
+.list{
+    display:flex;
+    flex-direction:column;
+    margin-top:2rem;
+}
+
+.list section{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    border:none;
+    margin-top: -1rem;
+}
+
+.list section:nth-child(odd) {
+    background-color: rgb(153, 161, 187);
+  }
+
+.list p{
+    display:inline-block;
+}
+
+.list img{
+    display:none;
 }
 
 /* ----------Discover page---------- */
