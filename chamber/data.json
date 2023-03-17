@@ -16,7 +16,7 @@
         "order": 2,
         "phone": "(555) 234-5678",
         "link": "https://www.bluebirdbakeryanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/blue-bakery-logo.webp"
       },
       {
         "name": "Pet Palace",
@@ -25,7 +25,7 @@
         "order": 3,
         "phone": "(555) 345-6789",
         "link": "https://www.petpalaceanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/pet-palace-logo.webp"
       },
       {
         "name": "The Book Nook",
@@ -34,7 +34,7 @@
         "order": 4,
         "phone": "(555) 456-7890",
         "link": "https://www.thebooknookanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/book-logo.webp"
       },
       {
         "name": "Painted Pottery",
@@ -43,7 +43,7 @@
         "order": 5,
         "phone": "(555) 567-8901",
         "link": "https://www.paintedpotteryanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/pottery-logo.webp"
       },
       {
         "name": "Fresh Flowers & Gifts",
@@ -52,7 +52,7 @@
         "order": 6,
         "phone": "(555) 678-9012",
         "link": "https://www.freshflowersandgiftsanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/flowers-logo.webp"
       },
       {
         "name": "Happy Tails Grooming",
@@ -61,7 +61,7 @@
         "order": 7,
         "phone": "(555) 789-0123",
         "link": "https://www.happytailsgroominganytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/happy-tails-logo.webp"
       },
       {
         "name": "The Golden Nugget",
@@ -70,7 +70,7 @@
         "order": 8,
         "phone": "(555) 890-1234",
         "link": "https://www.thegoldennuggetanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/golden-nugget-logo.webp"
       },
       {
         "name": "Fit for Life Gym",
@@ -79,7 +79,7 @@
         "order": 9,
         "phone": "(555) 901-2345",
         "link": "https://www.fitforlifegymanytown.com",
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "imageurl": "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/images/gym-logo.webp"
       }
     ]
   }
