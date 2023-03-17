@@ -1,4 +1,4 @@
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+const url = "https://raw.githubusercontent.com/brysonm96/WDD230/ad21904aa642ce0258687c14535536acb71e628f/chamber/data.json";
 
 const getBusinesses = async () => {
   let businesses = await jsonFetch(url);
@@ -29,7 +29,7 @@ const displayBusinesses = (businesses) => {
     h2.textContent = `${business.name}`;
     date.innerHTML = `<span class="label">Address: </span> ${business.address}`;
     place.innerHTML = `<span class="label">Phone #: </span> ${business.phone}`;
-    num.innerHTML = `<span class="label">Web Link: </span> ${business.link}`;
+    num.innerHTML = `<span class="label"></span> ${business.link}`;
     membership.innerHTML = `<span class="label">Membership Level: </span> ${business.membership}`;
     
 

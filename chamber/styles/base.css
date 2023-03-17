@@ -362,6 +362,12 @@ section h2{
     color:black;
 }
 
+section p{
+    text-align:center;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+}
+
 section img {
 	width: 100px;
 	height: 100px;
