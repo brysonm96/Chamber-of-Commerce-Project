@@ -151,8 +151,6 @@ header nav{
     flex-direction: column;
 }
 
-
-
 #hero{
     background-color: rgb(226, 231, 248);
     border: 0.1rem solid black;
@@ -194,20 +192,31 @@ header nav{
     background-image: linear-gradient(rgb(85, 164, 238), rgb(255, 255, 255));
 }
 
-#weather h3{
-    color: rgb(0, 0, 0);
+#weather h2{
+    color:black;
     text-align:center;
-}
-
-#weather h4{
-    color: rgb(0, 0, 0);
-    text-align:center;
-    font-weight:600;
 }
 
 #weather p{
     color: rgb(0, 0, 0);
+    font-size:30px;
+    text-align: center;
+}
+
+#description{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#current-temp{
     font-weight:600;
+}
+
+#description h3{
+    color:black;
+    text-align:center;
 }
 
 #weather img{
@@ -215,30 +224,10 @@ header nav{
     height: 100px;
 }
 
-#weatherIcon{
-    font-size:50px;
-}
-
-#thermIcon{
-    font-size:25px;
-}
-
-#weather h4{
-    text-align:center;
-    font-size: 30px;
-}
-
-#windIcon{
-    font-size:20px;
-}
-
-#chillIcon{
-    font-size:20px;
-}
-
-#weather p{
-    text-align: center;
-    align-self:center;
+#windChill{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
 }
 
 #news{

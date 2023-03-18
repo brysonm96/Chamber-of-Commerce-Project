@@ -58,13 +58,25 @@
             <hr>
             <p>April 3 - April 8</p>
         </div>
+
         <div id="weather">
-            <h3>Weather<span id="weatherIcon"> ☁️ </span></h3>
-            <h4 class="weatherInfo">
-                <span id="thermIcon">🌡️</span><span id="temperature">44</span> ºF
-            </h4>
-            <p><span id="windIcon">💨</span> Wind Speed: <span id="speed">4.0</span> | <span id="chillIcon">❄️</span> Wind Chill: <span id="windChill">N/A</span></p>
+
+            <h2>Local Weather</h2>
+
+            <p>🌡️ <span id="current-temp"></span> ºF</p>
+
+            <figure id="description">
+            <h3><span id="currently"></span></h3>
+            <img id="weather-icon" alt="" src="">
+            </figure>
+
+            <div id="windChill">
+            <h4>Wind: <span id="speed"></span> MPH</h4>
+            <h4>Wind Chill: <span id="chill"></span> ºF</h4>
+            </div>
+
         </div>
+
         <div id="news">
             <h3>The Daily Herald 📰</h3>
             <li><a href="https://www.columbiadailyherald.com/">News</a></li>
@@ -75,7 +87,7 @@
             <article class="spotlight"><h3>Advertise here! (See join page for details)</h3></article>
         </div>
         <div id="join">
-            <h3>Come join us and stay up to date and receive benefits!</h3>
+            <h3>Join us!</h3>
             <li><a href="join.html">Join</a></li>
         </div>
     </main>
@@ -107,7 +119,7 @@
     </footer>
     <script src="scripts/button.js"></script>
     <script src="scripts/date.js"></script>
-    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
     
 </body>
 </html>
