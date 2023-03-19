@@ -26,18 +26,22 @@
         background-color:rgb(65, 80, 119);
     }
 
-    #socialItems{
-        grid-column-start: 6;
-        grid-column-end: 7;
-        grid-row-start:1;
-        justify-content:space-evenly;
+    #facebook img{
+        display:flex;
     }
 
-    #socialItems img{
-        width:32px;
-        height:32px;
+    #facebook p{
+        display:none
     }
-    
+
+    #linkedin img{
+        display:flex;
+    }
+
+    #linkedin p{
+        display:none
+    }
+
     #hero{
         height:auto;
         grid-column-start:2;
