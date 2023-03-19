@@ -12,34 +12,33 @@ async function jsonFetch(url) {
 }
 
 const displayBusinesses = (businesses) => {
-  const cards = document.querySelector("div.spotlight");
-  const chosenAds = [];
-  cards.innerHTML = "";
+  const spotlight = document.querySelector("div.spotlight");
+  spotlight.innerHTML = "";
 
-  for (let i = 0; i < 3; i++ ){
+  const filteredBusinesses = businesses.filter(
+    (business) => business.membership === "Silver" || business.membership === "Gold"
+  );
 
-}
+  const selectedBusinesses = [];
+  while (selectedBusinesses.length < 3 && filteredBusinesses.length > 0) {
+    const randomIndex = Math.floor(Math.random() * filteredBusinesses.length);
+    selectedBusinesses.push(filteredBusinesses[randomIndex]);
+    filteredBusinesses.splice(randomIndex, 1);
+  }
 
-
-  //Create the card
-  businesses.forEach((business) => {
+  //Create the ads
+  selectedBusinesses.forEach((business, index) => {
     let card = document.createElement("section");
-    card.setAttribute("id", "ad");
+    // Assign an id to each business named ad1, ad2, ad3
+    card.setAttribute("id", `ad${index + 1}`);
     let h2 = document.createElement("h2");
     let stats = document.createElement("div");
     stats.classList.add("stats");
-    let date = document.createElement("p");
-    let membership = document.createElement("p");
-    let number = document.createElement("p");
     let website = document.createElement("p");
     let logo = document.createElement("img");
-
     //What is Displayed
     h2.textContent = `${business.name}`;
-    date.innerHTML = `<span class="label">Address: </span> ${business.address}`;
-    number.innerHTML = `<span class="label">Phone #: </span> ${business.phone}`;
-    website.innerHTML = `<span class="label"></span> ${business.link}`;
-    
+    website.innerHTML = `<span class="label"></span><a href="${business.link}">${business.link}</a>`;
     
 
     logo.setAttribute("src", business.imageurl);
@@ -50,18 +49,15 @@ const displayBusinesses = (businesses) => {
     logo.setAttribute("loading", "lazy");
     logo.setAttribute("width", "200");
     logo.setAttribute("height", "200");
-    stats.appendChild(date);
-    stats.appendChild(number);
-    stats.appendChild(website);
-    stats.appendChild(membership);
     
-
+    stats.appendChild(website);
     card.appendChild(h2);
     card.appendChild(stats);
     card.appendChild(logo);
 
-    cards.appendChild(card);
+    spotlight.appendChild(card);
   });
 };
 
+//Call function
 getBusinesses();

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
 </head>
 
 <body>
@@ -48,8 +50,9 @@
     <main id="mainHome">
         <div id="hero">
             <picture class="hero-img">
-                <source media="(max-width: 600px)" srcset="images/hero-photo-small.webp">
-                <img src="images/hero-photo-large.webp" alt="sample photo">
+                <source media="(min-width: 800px)" srcset="images/hero-photo-large.webp 1x">
+                <source media="(min-width: 500px)" srcset="images/hero-photo-medium.webp 1x">
+                <img id="hero-image" src="images/hero-photo-small.webp" alt="hero-image" width="1000" height="700">
             </picture>
         </div>
         <div id="event">
@@ -78,15 +81,19 @@
         </div>
 
         <div id="news">
-            <h3>The Daily Herald 📰</h3>
-            <li><a href="https://www.columbiadailyherald.com/">News</a></li>
+            <h3>The Daily Herald</h3>
+            <ul>
+            <li><a href="https://www.columbiadailyherald.com/">📰 News</a></li>
+            </ul>
         </div>
 
-        <div class="spotlight"> </div>
+        <div class="spotlight"></div>
 
         <div id="join">
             <h3>Join us!</h3>
-            <li><a href="join.html">Join</a></li>
+            <ul>
+            <li><a href="join.html">🤝Join</a></li>
+            </ul>
         </div>
     </main>
 
@@ -98,22 +105,23 @@
             <h2>Maury County Chamber & Economic Alliance</h2>
             <p>106 W 6th St</p>
             <p>Columbia, TN 38401</p>
-            <div id="pin1">
+            <ul id="pin1">
                 <li><a href="https://goo.gl/maps/ddUzsMViWkQmWTzB7"><img src="images/pin.png" alt="location map">Location Map</a></li>
-                </div>  
+            </ul>  
         </div>
         <div id="contact">
             <p>info@mauryalliance.org</p>
             <p>(931-388-2155)</p>
-            <div id="pin2">
+            <ul id="pin2">
                 <li><a href="https://goo.gl/maps/ddUzsMViWkQmWTzB7"><img src="images/pin.png" alt="location map">Location Map</a></li>
-                </div> 
+            </ul> 
         </div>
         <div id="author">
             <p>©<span id="copyrightyear"></span> Maury Alliance</p>
             <h3>Bryson Mouser</h3> 
             <p>WDD 230 Project</p>
             <div id="lastDate">Last Modification: <span id="lastModified"></span></div>
+        </div>
     </footer>
     <script src="scripts/button.js"></script>
     <script src="scripts/date.js"></script>
