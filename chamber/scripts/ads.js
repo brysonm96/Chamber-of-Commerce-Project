@@ -1,17 +1,17 @@
 const url = "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/data.json";
 
 const getBusinesses = async () => {
-  let businessData = await jsonFetch(url);
-  displayBusinesses(businessData);
+  let businesses = await jsonFetch(url);
+  displayBusinesses(businesses);
 };
 
 async function jsonFetch(url) {
   const response = await fetch(url);
   const data = await response.json();
-  return data.businessData;
+  return data.businesses;
 }
 
-const displayBusinesses = (businessData) => {
+const displayBusinesses = (businesses) => {
   const cards = document.querySelector("div.spotlight");
   const chosenAds = [];
   cards.innerHTML = "";
@@ -22,7 +22,7 @@ const displayBusinesses = (businessData) => {
 
 
   //Create the card
-  businessData.forEach((business) => {
+  businesses.forEach((business) => {
     let card = document.createElement("section");
     card.setAttribute("id", "ad");
     let h2 = document.createElement("h2");
