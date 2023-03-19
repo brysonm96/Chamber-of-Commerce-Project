@@ -26,19 +26,19 @@
         background-color:rgb(65, 80, 119);
     }
 
-    #facebook img{
-        display:flex;
-    }
-
-    #facebook p{
-        display:none
-    }
-
     #linkedin img{
         display:flex;
     }
 
     #linkedin p{
+        display:none
+    }
+
+    #facebook img{
+        display:flex;
+    }
+
+    #facebook p{
         display:none
     }
 
