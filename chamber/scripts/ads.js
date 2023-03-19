@@ -1,23 +1,30 @@
 const url = "https://raw.githubusercontent.com/brysonm96/WDD230/main/chamber/data.json";
 
 const getBusinesses = async () => {
-  let businesses = await jsonFetch(url);
-  displayBusinesses(businesses);
+  let businessData = await jsonFetch(url);
+  displayBusinesses(businessData);
 };
 
 async function jsonFetch(url) {
   const response = await fetch(url);
   const data = await response.json();
-  return data.businesses;
+  return data.businessData;
 }
 
-const displayBusinesses = (businesses) => {
-  const cards = document.querySelector("div.cards");
+const displayBusinesses = (businessData) => {
+  const cards = document.querySelector("div.spotlight");
+  const chosenAds = [];
   cards.innerHTML = "";
 
-  businesses.forEach((business) => {
+  for (let i = 0; i < 3; i++ ){
+
+}
+
+
+  //Create the card
+  businessData.forEach((business) => {
     let card = document.createElement("section");
-    card.setAttribute("id", "card")
+    card.setAttribute("id", "ad");
     let h2 = document.createElement("h2");
     let stats = document.createElement("div");
     stats.classList.add("stats");
@@ -27,11 +34,12 @@ const displayBusinesses = (businesses) => {
     let website = document.createElement("p");
     let logo = document.createElement("img");
 
+    //What is Displayed
     h2.textContent = `${business.name}`;
     date.innerHTML = `<span class="label">Address: </span> ${business.address}`;
     number.innerHTML = `<span class="label">Phone #: </span> ${business.phone}`;
     website.innerHTML = `<span class="label"></span> ${business.link}`;
-    membership.innerHTML = `<span class="label">Membership Level: </span> ${business.membership}`;
+    
     
 
     logo.setAttribute("src", business.imageurl);

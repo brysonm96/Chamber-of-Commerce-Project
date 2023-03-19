@@ -43,11 +43,11 @@
         grid-row-end:4;
     }
 
-    .spotlight:nth-child(1){
+    #spotlight1{
         width:50%;
     }
     
-    .spotlight:nth-child(2){
+    #spotlight2{
         width:50%;
     }
 

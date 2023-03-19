@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/large.css">
 </head>
 
-<body id="thankyouBody">
+<body id="contactBody">
     <header>
         <div id="logo">
             <img src="images/chamber-of-commerce-logo.webp" alt="Chamber Logo">
@@ -20,7 +20,7 @@
         </div>
 
         <ul id="socialItems">
-            <li><a href="http://www.facebook.com/"><img src="images/facebook-logo.png" alt="facebook"></a></li>
+            <li><a href="http://www.facebook.com/"><img src="images/facebook-logo.webp" alt="facebook"></a></li>
             <li><a href="http://www.linkedin.com/"><img src="images/linkedin-logo.png" alt="linkedin"></a></li>
         </ul>
     
@@ -29,11 +29,11 @@
         <nav>
 
             <ul id="navItems">
-                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directorty.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <div id="date">
@@ -45,11 +45,53 @@
 
     </header>
 
-    <main id="mainThankyou">
+    <main id="mainContact">
 
-        <img src="https://img.freepik.com/free-vector/thank-you-lettering_1262-6963.jpg" alt="thank you">
+        <div id="contactForm">
+            <h2>Contact Form</h2>
+            <form method="get" action="inquiries.html">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required>
+                <hr>
+                <label for="last-name">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required>
+                <hr>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required placeholder="e.g. example@domain.com">
+                <hr>
+                <label for="business-name">Business Name *</label>
+                <input type="text" id="business-name" name="business-name" required>
+                <hr>
+                <label for="inquiry">Questions/ Concerns</label>
+                <textarea id="business-description" name="business-description"></textarea>
+                <input type="submit" value="Send">
+              </form>
+        </div>
+
+        <div id="contactInfo">
+            <h2>Contact Us</h2>
+            <p>Phone: (931) 388-2155</p>
+            <p>Email: mauryalliance@email.com</p>
+
+            <h2>Visit Us</h2>
+            <p>106 W 6th St, Columbia, TN 38401</p>
+
+            <h2>Hours</h2>
+            <p>Monday: 8AM - 5PM </p>
+            <p>Tuesday: 8AM - 5PM</p>
+            <p>Wednesday: 8AM - 5PM</p>
+            <p>Thrusday: 8AM - 5PM</p>
+            <p>Friday: 8AM - 4:30PM</p>
+            <p>Saturday: Closed</p>
+            <p>Sunday: Closed</p>
+
+
+        </div>
+
         
-        <p>Congratulations, we're glad you joined! Be sure to check your email for confirmation.</p>
+        
+
+
     </main>
 
     <footer>
@@ -77,8 +119,8 @@
             <p>WDD 230 Project</p>
             <div id="lastDate">Last Modification: <span id="lastModified"></span></div>
     </footer>
-    <script src="scripts/date.js"></script>
     <script src="scripts/button.js"></script>
+    <script src="scripts/date.js"></script>
     
 </body>
 </html>

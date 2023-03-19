@@ -86,19 +86,19 @@
         grid-row-end:7;
     }
 
-    .spotlight:nth-child(1){
+    #spotlight1{
         width:auto;
         height:30%;
         margin-bottom:1em;
     }
     
-    .spotlight:nth-child(2){
+    #spotlight2{
         width:auto;
         height:30%;
         margin-bottom:1em;
     }
     
-    .spotlight:nth-child(3){
+    #spotlight3{
         display:flex;
         padding: 0.5rem;
         height:150px;
@@ -108,9 +108,15 @@
         
     }
 
-    .spotlight:nth-child(3) h3{
+    #spotlight3 h3{
         color:black;
 
+    }
+
+    #mainContact{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        place-items:center;
     }
 
     footer{

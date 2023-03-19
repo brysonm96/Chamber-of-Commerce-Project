@@ -276,14 +276,20 @@ header nav{
     margin: 0.5rem;
 }
 
-.spotlight:nth-child(1){
+#ad{
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
-    background-image: linear-gradient(rgb(228, 188, 102), rgb(255, 255, 255));
+    
 }
 
-.spotlight:nth-child(1) h3{
+#ad img {
+	width: 100px;
+	height: 100px;
+	margin-top: 1rem;
+}
+
+#ad h3{
     color:black;
     text-align:center;
     background-color:rgb(226, 231, 248);
@@ -292,19 +298,19 @@ header nav{
     padding-bottom:0.5em;
 }
 
-.spotlight:nth-child(1) p{
+#ad p{
     font-weight:600;
     text-align:center;
 }
 
-.spotlight:nth-child(2){
+#spotlight2{
     padding: 0.5rem;
     height:150px;
     border: 1px solid rgb(158, 162, 173);
     background-image: linear-gradient(rgb(102, 228, 175), rgb(255, 255, 255));
 }
 
-.spotlight:nth-child(2) h3{
+#spotlight2 h3{
     color:black;
     text-align:center;
     background-color:rgb(226, 231, 248);
@@ -313,12 +319,12 @@ header nav{
     padding-bottom:0.5em;
 }
 
-.spotlight:nth-child(2) p{
+#spotlight2 p{
     font-weight:600;
     text-align:center;
 }
 
-.spotlight:nth-child(3){
+#spotlight3{
     display: none;
 }
 
@@ -350,7 +356,7 @@ header nav{
 	grid-gap: 1rem;
 }
 
-section {
+#card {
 	margin-top: 1rem;
     border: solid 2px rgb(154, 172, 219);
 	color: black;
@@ -363,17 +369,17 @@ section {
     padding-bottom:1rem;
 }
 
-section h2{
+#card h2{
     color:black;
 }
 
-section p{
+#card p{
     text-align:center;
     inline-size: 300px;
     overflow-wrap: break-word;
 }
 
-section img {
+#card img {
 	width: 100px;
 	height: 100px;
 	margin-top: 1rem;
@@ -385,7 +391,7 @@ section img {
     margin-top:2rem;
 }
 
-.list section{
+.list #card{
     display:flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -393,7 +399,7 @@ section img {
     margin-top: -1rem;
 }
 
-.list section:nth-child(odd) {
+.list #card:nth-child(odd) {
     background-color: rgb(153, 161, 187);
   }
 
@@ -529,6 +535,35 @@ form{
     align-self: center;
     margin-top: 3em;
 }
+
+/* ----------Contact Page---------- */
+
+#contactBody{
+    background-image:url("https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=1380&t=st=1678916179~exp=1678916779~hmac=f9085767d0b0853efcf6f1db832fe939ff7ad924a1023124f10441e529c97846");
+}
+
+#mainContact{
+    height:1000px;
+    display:flex;
+    flex-direction:column;
+    place-items:center;
+}
+
+#contactForm{
+    background-image: linear-gradient(rgb(154, 172, 219), rgb(255, 255, 255)); 
+    padding:3em;
+    border: solid 2px rgb(154, 172, 219);
+}
+
+#contactForm h2{
+    color:black;
+}
+
+#contactInfo h2{
+    color:black;
+}
+
+
 
 /* ----------The footer---------- */
 
