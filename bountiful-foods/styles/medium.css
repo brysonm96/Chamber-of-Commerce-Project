@@ -1,0 +1,30 @@
+@media (min-width: 800px){
+
+    header {
+        display: flex;
+        flex-direction:row;
+    }
+
+    ul{
+        flex-direction:row;
+    }
+
+    #menuButton{
+        display:none;
+    }
+
+    #navItems{
+        display:flex;
+    }
+
+    #hero img{
+        height: 550px;
+        width: 800px;
+    }
+
+    #scenes{
+        display:flex;
+        flex-direction:row;
+    }
+
+}

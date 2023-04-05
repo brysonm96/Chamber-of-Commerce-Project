@@ -1,0 +1,412 @@
+#index-body{
+    background-color:rgb(212, 242, 255);
+}
+
+p, a{
+    font-family: "Mogra";
+}
+
+h2, h3{
+    font-family: "Ubuntu";
+}
+
+header {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    
+    background-color: rgb(36, 163, 121);
+}
+
+#menuButton{
+    display:flex; /*Change to Flex*/
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:50px;
+    width:50px;
+    border:none;
+    background:none;
+    margin:0.5em;
+}
+
+#menuButton #hamburger{
+    display: block;
+}
+#menuButton.open #hamburger{
+    display: none;
+}
+
+#menuButton.open #close{
+    display: block;
+}
+#menuButton #close{
+    display: none;
+}
+
+#navItems.open{
+    display:flex;
+    flex-direction:column;
+}
+
+#navItems{
+    list-style: none;
+    display:none;
+}
+
+#menuButton:hover{
+    background-color: rgb(27, 126, 93);
+    border-radius:1em;
+}
+
+nav{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+ul{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#navItems li{
+    list-style-type:none;
+    margin-right:1em;
+    padding:1em;
+}
+
+#navItems li:hover{
+    background-color: rgb(27, 126, 93);
+    padding:1em;
+}
+
+#navItems a{
+    color:black;
+    font-weight:600;
+    text-decoration:none;
+}
+
+#facebook img{
+    height:30px;
+    width: 30px;
+}
+
+#instagram img{
+    height:30px;
+    width: 30px;
+}
+
+#twitter img{
+    height:30px;
+    width: 30px;
+}
+
+#logo{
+    font-family: "Mogra";
+    display:flex;
+    flex-direction:row;
+    align-items:center
+}
+
+#logo h1{
+    margin-right:2em;
+}
+
+#logo img{
+    height:80px;
+    width:80px;
+}
+
+#fade1{
+    background-image: linear-gradient(rgb(36, 163, 121), rgb(212, 242, 255));
+    height:50px;
+    width:auto;
+}
+
+#welcome h1, #welcome p{
+    text-align:center;
+}
+
+/* Main */
+
+main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+#hero{
+    display:flex;
+    flex-direction:column;
+}
+
+#hero img{
+    height: 400px;
+    width: 600px;
+    object-fit:cover;
+    border: solid 2px rgb(98, 154, 199);
+}
+
+#images-weather{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+#scenes{
+    display:flex;
+    flex-direction:column;
+}
+
+#scenes img{
+    margin:1em;
+    border: solid 2px rgb(98, 154, 199);
+    border-radius: 1em;
+    height:300px;
+    width:500px;
+}
+
+.weather-card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.weather-card p{
+    font-weight:600;
+}
+
+.weather{
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(125, 196, 255);
+    border: solid 2px rgb(98, 154, 199);
+    padding:3em;
+    margin:1em;
+}
+
+#forecast{
+    display:flex;
+    flex-direction: row;
+}
+
+#day1{
+    margin:1em;
+}
+
+#day1 p{
+    font-weight: 600;
+}
+
+#day2{
+    margin:1em;
+}
+
+#day2 p{
+    font-weight: 600;
+}
+
+#day3{
+    margin:1em;
+}
+
+#day3 p{
+    font-weight: 600;
+}
+
+#info2{
+    display:none;
+}
+
+#info3{
+    display:none;
+}
+
+#scenes-large{
+    display:none;
+}
+
+#make{
+    display:flex;
+    flex-direction:row;
+    border-top:solid 2px rgb(182, 211, 223);
+    margin:2em;
+}
+
+#fresh-link{
+    display:flex;
+    flex-direction:column;
+    margin:1em;
+    padding:2em;
+    background-color:rgb(179, 217, 233);
+    border: solid 2px rgb(138, 168, 180);
+}
+
+#fresh-link h4{
+    text-align:center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: rgb(36, 163, 121);
+}
+
+#location{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    padding:2em;
+    
+}
+
+#author{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    border-right: solid 2px rgb(25, 116, 85);
+    border-left: solid 2px rgb(25, 116, 85);
+    padding:2em;
+}
+
+#logo-footer{
+    font-family: "Mogra";
+    display:flex;
+    flex-direction:row;
+    margin:3em;
+}
+
+#logo-footer h1{
+    margin-right:2em;
+}
+
+#logo-footer img{
+    height:80px;
+    width:80px;
+}
+
+#fade2{
+    background-image: linear-gradient(rgb(212, 242, 255), rgb(36, 163, 121));
+    height:50px;
+    width:auto;
+}
+
+#location a{
+    color:rgb(0, 0, 0);
+}
+
+#location li{
+    list-style-type: none;
+}
+
+/* Fresh */
+
+#body-fresh{
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(212, 242, 255);
+}
+
+#main-fresh{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    height:800px;
+    width:auto;
+}
+
+#fresh-form{
+    background-image: url("/bountiful-foods/images/vecteezy_orange-fruit-seamless-pattern_7638803.jpg");
+    background-size:300px;
+    border: solid 2px rgb(98, 154, 199);
+    border-radius:2em;
+    padding:2em;
+}
+
+#fresh-form h1{
+    background-color:white;
+    padding:0.2em;
+    border: solid 2px rgb(212, 195, 154);
+    border-radius: 1em;
+}
+
+#drinkForm{
+    font-weight:600;
+}
+
+#drinkForm > *{
+    margin: 1em;
+}
+
+#instructions{
+    margin:-1em;
+}
+
+#drinkForm label{
+    background-color:white;
+    padding:0.2em;
+    border: solid 2px rgb(212, 195, 154);
+    border-radius: 1em;
+}
+
+#output {
+  display: none;
+}
+
+#output div{
+    margin:0.5em;
+    font-weight:600;
+}
+
+/* About */
+
+#main-about{
+    display:flex;
+    flex-direction:column;
+    background-image: url("/bountiful-foods/images/fruitpattern1-01.jpg");
+    background-size: 600px;
+}
+
+#aboutUs{
+    inline-size: 400px;
+    overflow-wrap: break-word;
+    background-color:rgb(212, 242, 255);
+    margin:2em;
+    padding:3em;
+    border: solid 2px rgb(98, 154, 199);
+    border-radius:2em;
+}
+
+#aboutImage img{
+    margin:1em;
+    border: solid 2px rgb(98, 154, 199);
+    border-radius: 1em;
+    height:300px;
+    width:500px;
+}
+
+#map {
+    height: 500px;
+    width: 700px;
+    border: solid 2px rgb(98, 154, 199);
+    margin:2em;
+  }
+
+#contactUs{
+    inline-size: 400px;
+    overflow-wrap: break-word;
+    background-color:rgb(255, 241, 212);
+    margin:2em;
+    padding:1em;
+    border: solid 2px rgb(218, 178, 100);
+    border-radius:2em;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Bountiful Goods</title>
+    <meta name="description" content="A web page created by Bryson Mouser.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mogra">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+</head>
+<body id="body-fresh">
+    <header>
+        
+        <nav>
+            <ul id="navItems">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li id="facebook"><a href="http://www.facebook.com/"><img src="images/facebook-logo.webp" alt="facebook"></a></li>
+                <li id="instagram"><a href="http://www.instagram.com/"><img src="images/insta-logo.webp" alt="instagram"></a></li>
+                <li id="twitter"><a href="http://www.twitter.com/"><img src="images/twitter-logo.webp" alt="twitter"></a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <img src="images/favicon.webp" alt="boutiful logo">
+            <h1>Bountiful Foods</h1>
+            <button id="menuButton"><span id="hamburger"><h3>︾</h3></span><span id="close"><h3>︽</h3></span></button>
+        </div>
+    </header>
+    <div id="fade1">
+    </div>
+
+<main id="main-fresh">
+<section id="fresh-form">
+    <h1>Create Your Drink</h1>
+	<form id="drinkForm">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName"><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone"><br><br>
+		<label for="fruit1">Fruit 1:</label>
+        <select id="fruit1"></select><br>
+        <label for="fruit2">Fruit 2:</label>
+        <select id="fruit2"></select><br>
+        <label for="fruit3">Fruit 3:</label>
+        <select id="fruit3"></select><br>
+		<label for="instructions">Special Instructions:</label>
+		<textarea id="instructions" name="instructions"></textarea><br><br>
+		<input type="submit" value="Submit Order">
+	</form>
+</section>
+<section id="results" class="form-submitted">
+    <div id="output">
+        <!-- formatted output of user's drink order -->
+    </div>
+</section>
+</main>
+<div id="fade2">
+    <span></span>
+</div>
+<footer>
+        <div id="location">
+            <h2>Location</h2>
+            <p>105 W 1st St</p>
+            <p>Carlsbad, CA 92008</p>
+            <ul id="pin">
+                <li><a href="https://goo.gl/maps/ddUzsMViWkQmWTzB7">Location 📍</a></li>
+            </ul>  
+        </div>
+        <div id="author">
+            <p>©<span id="copyrightyear"></span> Bountiful Goods</p>
+            <h3>Bryson Mouser</h3> 
+            <div id="lastDate">Last Modification: <span id="lastModified"></span></div>
+        </div>
+            <div id="logo-footer">
+                <img src="images/favicon.webp" alt="boutiful logo">
+                <h1>Bountiful Foods</h1>
+            </div>
+    </footer>
+<script src="scripts/button.js"></script>
+<script src="scripts/drinks.js"></script>
+<script src="scripts/store.js"></script>
+<script src="modified/store.js"></script>
+</body>
+</html>
