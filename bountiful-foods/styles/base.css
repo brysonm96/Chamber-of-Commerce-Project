@@ -372,7 +372,7 @@ footer {
 #main-about{
     display:flex;
     flex-direction:column;
-    background-image: url("/bountiful-foods/images/fruitpattern1-01.jpg");
+    background-image: url("https://brysonm96.github.io/WDD230/bountiful-foods/index.html");
     background-size: 600px;
 }
 
