@@ -325,7 +325,7 @@ footer {
 }
 
 #fresh-form{
-    background-image: url("/bountiful-foods/images/vecteezy_orange-fruit-seamless-pattern_7638803.jpg");
+    background-image: url("https://github.com/brysonm96/WDD230/blob/main/bountiful-foods/images/vecteezy_orange-fruit-seamless-pattern_7638803.jpg?raw=true");
     background-size:300px;
     border: solid 2px rgb(98, 154, 199);
     border-radius:2em;
@@ -372,7 +372,7 @@ footer {
 #main-about{
     display:flex;
     flex-direction:column;
-    background-image: url("/bountiful-foods/images/fruitpattern1-01.jpg");
+    background-image: url("https://github.com/brysonm96/WDD230/blob/main/bountiful-foods/images/fruitpattern1-01.jpg?raw=true");
     background-size: 600px;
 }
 
